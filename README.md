@@ -10,6 +10,7 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 
 ### `stdlib.h`
 
+[tasklist]
 - [x] fn: `void *calloc(size_t nmemb, size_t size);`
 - [x] fn: `void *malloc(size_t size);`
 - [x] fn: `void free(void *ptr);`
@@ -21,6 +22,7 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 
 ### `stdio.h`
 
+[tasklist]
 - [ ] gl: `FILE *stdin`
 - [ ] gl: `FILE *stdout`
 - [ ] gl: `FILE *stderr`
@@ -55,6 +57,7 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 
 ### `string.h`
 
+[tasklist]
 - [x] fn: `char *strcat(char *dest, const char *src)`
 - [x] fn: `char *strchr(const char *s, int c)`
 - [x] fn: `char *strrchr(const char *s, int c)`
