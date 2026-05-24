@@ -1,0 +1,5 @@
+*.o
+*.bin
+*.disasm
+popcorn.h
+stb_sprintf.h
