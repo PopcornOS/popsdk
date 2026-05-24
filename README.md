@@ -28,8 +28,8 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 - [x] fn: `FILE *fdopen(int fildes, const char *mode)` (Unimplementable: Popcorn OS has no concept of file descriptor numbers.)
 - [ ] fn: `FILE *freopen(const  char *path, const char *mode, FILE *stream)`
 - [x] fn: `int fclose(FILE *stream)`
-- [x] fn: `size_t  fread(void *ptr, size_t size, size_t nmemb, FILE *stream)`
-- [x] fn: `size_t  fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)`
+- [x] fn: `size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream)`
+- [x] fn: `size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)`
 - [ ] fn: `int fgetc(FILE *stream)`
 - [ ] fn: `char *fgets(char *s, int size, FILE *stream)`
 - [ ] fn: `int getc(FILE *stream)`
