@@ -18,7 +18,7 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 - :x: fn: `long int strtol(const char *nptr, char **endptr, int base);`
 - :x: fn: `unsigned long int strtoul(const char *nptr, char **endptr, int base);`
 - :white_check_mark: fn: `void exit(int);` 
-  > Unimplementable: Popcorn OS doesn't have a way to exit other than returning from `pop_main`.
+  > **Unimplementable:** Popcorn OS doesn't have a way to exit other than returning from `pop_main`.
 
 ### `stdio.h`
 
@@ -27,7 +27,7 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 - :x: gl: `FILE *stderr`
 - :white_check_mark: fn: `FILE *fopen(const char *path, const char *mode)`
 - :white_check_mark: fn: `FILE *fdopen(int fildes, const char *mode)` 
-  > Unimplementable: Popcorn OS has no concept of file descriptor numbers.
+  > **Unimplementable:** Popcorn OS has no concept of file descriptor numbers.
 - :x: fn: `FILE *freopen(const  char *path, const char *mode, FILE *stream)`
 - :white_check_mark: fn: `int fclose(FILE *stream)`
 - :white_check_mark: fn: `size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream)`
