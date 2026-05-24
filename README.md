@@ -37,8 +37,8 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 - :x: fn: `char *gets(char *s)`
 - :x: fn: `int ungetc(int c, FILE *stream)`
 - :x: fn: `int fflush(FILE *stream)`
-- :x: fn: `int putchar (int c)`
-- :white_check_mark: fn: `int puts (const char* s)`
+- :x: fn: `int putchar(int c)`
+- :white_check_mark: fn: `int puts(const char* s)`
 - :white_check_mark: fn: `int printf(const char *format, ...)`
 - :white_check_mark: fn: `int fprintf(FILE *stream, const char *format, ...)`
 - :x: fn: `int sprintf(char *str, const char *format, ...)`
