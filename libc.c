@@ -1,15 +1,3 @@
-// Libc for Popcorn OS
-// An attempt to port a general-purpose subset of libc to Popcorn OS
-// Current status: 20/47 functions, 1/1 structs, 1/1 macros, 0/3 globals
-//
-// NOTES: stdout, stdin, stderr do not play nice and are marked UNIMPLEMENTED
-//
-// This port could not be possible without the work of Sean Barrett,
-// who made stb_sprintf. Thanks, stb! It would also not be possible without
-// the GNU Project, which created GCC, which made possible the MinGW project, which made
-// possible TinyCC by Fabrice Bellard, from which the libc headers have been taken
-// (with some modifications).
-
 #include "popcorn.h"
 #include <stddef.h>
 #include <stdarg.h>
