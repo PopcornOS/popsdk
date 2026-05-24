@@ -3,6 +3,8 @@
 #include <string.h>
 #include "popcorn.h"
 
+extern pop_Services* svc;
+
 int main(int argc, char** argv) {
     // text output
     puts("puts: Hello world!");
