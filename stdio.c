@@ -1,3 +1,5 @@
+#include "stb_sprintf.h"
+
 FILE *fopen(const char *path, const char *mode) {
     BOOL r = FALSE, w = FALSE, c = FALSE, b = FALSE;
     for (size_t i = 0; mode[i]; i++) {
@@ -103,3 +105,6 @@ int puts(const char *s) {
     free(wcrlf);
     return strlen(s);
 }
+
+#define STB_SPRINTF_IMPLEMENTATION
+#include "stb_sprintf.h"

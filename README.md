@@ -1,19 +1,20 @@
 # Popcorn OS SDK
 
-Popcorn OS Software Development Kit. Currently only contains a half-working libc subset shim.
+Popcorn OS Software Development Kit. Currently only contains a half-working implementation of a small but general-purpose libc subset.
 
 ## Okay, what's in this shim?
 
-Currently, the subset has 45 functions and 3 globals. Only 22 functions and no globals are implemented. These are listed below.
+Currently, the subset has 53 functions and 3 globals. Only 29.5 functions and no globals are implemented. These are listed below.
 
-`gl` stands for global and `fn` stands for function. :white_check_mark: means implemented and :x: means uninplemented. Unimplementable things are :white_check_mark: because we might as well not worry about implementing them.
+`gl` stands for global and `fn` stands for function. :white_check_mark: means implemented, :o: means partially implemented, and :x: means uninplemented. Unimplementable things are :white_check_mark: because we might as well not worry about implementing them.
 
 ### `stdlib.h`
 
 - :white_check_mark: fn: `void *calloc(size_t nmemb, size_t size);`
 - :white_check_mark: fn: `void *malloc(size_t size);`
 - :white_check_mark: fn: `void free(void *ptr);`
-- :white_check_mark: fn: `void *realloc(void *ptr, size_t size);`
+- :o: fn: `void *realloc(void *ptr, size_t size);`
+  > Copies blindly without knowledge of previous size.
 - :x: fn: `int atoi(const char *nptr);`
 - :x: fn: `long int strtol(const char *nptr, char **endptr, int base);`
 - :x: fn: `unsigned long int strtoul(const char *nptr, char **endptr, int base);`
@@ -66,6 +67,17 @@ Currently, the subset has 45 functions and 3 globals. Only 22 functions and no g
 - :white_check_mark: fn: `void *memset(void *s, int c, size_t n)`
 - :white_check_mark: fn: `char *strdup(const char *s)`
 - :white_check_mark: fn: `size_t strlen(const char *s)`
+
+### `math.h`
+
+- :x: fn: `int floor(float x)`
+- :x: fn: `int ceil(float x)`
+- :x: fn: `double pow(double base, double exp)`
+- :x: fn: `double sqrt(double x)`
+- :x: fn: `double fmod(double x, double y)`
+- :x: fn: `float cos(float x)`
+- :x: fn: `float asin(float y)`
+- :x: fn: `float acos(float y)`
 
 ## Building
 

@@ -1,13 +1,13 @@
-#ifndef _INC_STDLIB
-#define _INC_STDLIB
+#ifndef _STDLIB_H
+#define _STDLIB_H
 
-void *calloc(size_t nmemb, size_t size);
-void *malloc(size_t size);
-void free(void *ptr);
-void *realloc(void *ptr, size_t size);
-int atoi(const char *nptr);
-long int strtol(const char *nptr, char **endptr, int base);
-unsigned long int strtoul(const char *nptr, char **endptr, int base);
-void exit(int);
+extern void *calloc(size_t nmemb, size_t size);
+extern void *malloc(size_t size);
+extern void free(void *ptr);
+extern void *realloc(void *ptr, size_t size);
+extern int atoi(const char *nptr);
+extern long int strtol(const char *nptr, char **endptr, int base);
+extern unsigned long int strtoul(const char *nptr, char **endptr, int base);
+extern void exit(int);
 
 #endif

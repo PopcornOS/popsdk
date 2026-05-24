@@ -2,8 +2,6 @@
 #include <stddef.h>
 #include <stdarg.h>
 
-#include "stb_sprintf.h"
-
 #ifdef _LIBC_DEBUG_ON
     #define _WIDELIT0(x) L##x
     #define _WIDELIT(x) _WIDELIT0(x)
@@ -81,6 +79,16 @@ void *memmove(void *dest, const void *src, size_t n);
 void *memset(void *s, int c, size_t n);
 char *strdup(const char *s);
 size_t strlen(const char *s);
+
+/* math.h */
+int floor(float x);
+int ceil(float x);
+double pow(double base, double exp);
+double sqrt(double x);
+double fmod(double x, double y);
+float cos(float x);
+float asin(float y);
+float acos(float y);
 
 // Internal helpers
 pop_Services* svc;
@@ -226,5 +234,12 @@ static CHAR16* _sbloat(const char* str) {
 /* string.h */
 #include "string.c"
 
-#define STB_SPRINTF_IMPLEMENTATION
-#include "stb_sprintf.h"
+/* math.h */
+int floor(float x) {return 0;}
+int ceil(float x) {return 0;}
+double pow(double base, double exp) {return 0;}
+double sqrt(double x) {return 0;}
+double fmod(double x, double y) {return 0;}
+float cos(float x) {return 0;}
+float asin(float y) {return 0;}
+float acos(float y) {return 0;}
