@@ -6,7 +6,7 @@ Popcorn OS Software Development Kit. Currently only contains a half-working libc
 
 Currently, the subset has 45 functions and 3 globals. Only 22 functions and no globals are implemented. These are listed below.
 
-`gl` stands for global and `fn` stands for function. Checked boxes represent implemented and unchecked ones represent uninplemented. Unimplementable things are checked because we might as well not worry about implementing them.
+`gl` stands for global and `fn` stands for function. :white_check_mark: means implemented and :x: means uninplemented. Unimplementable things are :white_check_mark: because we might as well not worry about implementing them.
 
 ### `stdlib.h`
 
